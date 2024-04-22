@@ -14,17 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PageController::class, 'index'])->name('home');
-Route::get('/', [PageController::class, 'single'])->name('single');
-
-/* 
-
-Route::get('/single', function () {
-    return view('single');
-})->name('single');
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/single', [PageController::class, 'single'])->name('single');
 
 
- */
 
 
 
